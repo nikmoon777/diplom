@@ -1,0 +1,21 @@
+Изменяет параметры пользователя.
+
+Сигнатура команды:
+/setuser  telegram_id  {param_name}:{param_value}
+/setuser  telegram_id  {param_name}:{param_value}  [ {param_name}:{param_value} ]
+/setuser  telegram_id  {param_name}:{param_value}  [ {param_name}:{param_value} ]  [ {param_name}:{param_value} ]
+/setuser  { reply }  {param_name}:{param_value}
+/setuser  { reply }  {param_name}:{param_value}  [ {param_name}:{param_value} ]
+/setuser  { reply }  {param_name}:{param_value}  [ {param_name}:{param_value} ]  [ {param_name}:{param_value} ]
+
+param_name:
+Любое значение из списка (role, username, phone);
+role: Бывает трех видов, по возрастанию: USER, ADMIN, MASTER
+
+param_value:
+Соответствующее значение для param_name. Разделяются символом ":" в обязательном порядке.
+
+Вызываемые команды: /setuser, /set, /сетюзер, /сет.
+
+*Команда позволяет использовать пересланные сообщения в качестве аргументов к ней.
+*При использовании reply telegram_id подставляется автоматически.

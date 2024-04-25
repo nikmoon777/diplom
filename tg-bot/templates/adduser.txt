@@ -1,0 +1,14 @@
+Добавляет нового пользователя в базу.
+
+Сигнатура команды:
+/adduser  [ (telegram_id | user_nickname | number_phone) ]  [ (telegram_id | user_nickname | number_phone) ]  [ (telegram_id | user_nickname | number_phone) ]
+/adduser  [ telegram_id ]  [ user_nickname ]  [ number_phone ]
+/adduser  { reply }
+
+Результат: При успешном удалении возвращает "OK".
+
+Вызываемые команды: /adduser, /add, /юзер, /добавить.
+
+*Команда позволяет использовать пересланные сообщения в качестве аргументов к ней.
+*Если аргументы к команде не были переданы, то производится попытка создать пользователя с telegram_id равным 0.
+*При использовании reply значения telegram_id и user_nickname подставляются автоматически.

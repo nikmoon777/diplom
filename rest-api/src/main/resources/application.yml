@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: "postgres"
+    password: "postgres"
+    url: "jdbc:postgresql://localhost:5432/tg_scam"
+  jpa:
+    hibernate:
+      ddl-auto: validate
+springdoc:
+  swagger-ui:
+    path: "/docs"
